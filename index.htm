@@ -1,0 +1,45 @@
+<!-- saved from url=(0108)https://calbaptist.blackboard.com/bbcswebdav/courses/2021-SP-UT-EGR424-A_CSC512-A_CSC524-A/index%281%29.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+<div id="myBtn">
+    <a href="#">Click Me</a>
+</div>
+<div id="output">
+</div>
+<!-- you can pull in jquery code using any cdn online, here I used google'hosted jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="utils.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myBtn a").click(function (e) {
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/posts')
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/comments')
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/albums')
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/photos')
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/todos')
+            getDataWithXHRObject('https://jsonplaceholder.typicode.com/users')
+
+            getDataWithFetch('https://jsonplaceholder.typicode.com/posts')
+            getDataWithFetch('https://jsonplaceholder.typicode.com/comments')
+            getDataWithFetch('https://jsonplaceholder.typicode.com/albums')
+            getDataWithFetch('https://jsonplaceholder.typicode.com/photos')
+            getDataWithFetch('https://jsonplaceholder.typicode.com/todos')
+            getDataWithFetch('https://jsonplaceholder.typicode.com/users')
+
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/posts')
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/comments')
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/albums')
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/photos')
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/todos')
+            getDataWithAJAX('https://jsonplaceholder.typicode.com/users')
+
+        })
+    })
+
+
+</script>
+</body>
+</html>
